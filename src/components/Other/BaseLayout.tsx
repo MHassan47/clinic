@@ -10,8 +10,8 @@ const BaseLayout: FC<BaseLayoutProps> = (props) => {
       <div>
         <Sidebar />
       </div>
-      <div className="flex w-full">{props.children}</div>
-      <div className="flex w-full"></div>
+      <div className="flex w-2/3">{props.children}</div>
+      <div className="flex w-1/3 bg-gray-300"></div>
     </div>
   );
 };

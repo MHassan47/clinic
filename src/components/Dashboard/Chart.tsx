@@ -9,6 +9,7 @@ import {
   Tooltip,
   Area,
   ComposedChart,
+  ResponsiveContainer,
 } from "recharts";
 
 const data = [
@@ -25,41 +26,43 @@ const Chart: FC = () => {
   };
 
   return (
-    <div className="flex flex-col bg-white dark:bg-gray-600 dark:text-white h-full w-max rounded-2xl p-6">
+    <div className="flex flex-col bg-white dark:bg-gray-600 dark:text-white h-full w-full rounded-2xl p-6 transition duration-500 ease-in-out transform">
       <div className="flex justify-between">
         <h1 className="font-semibold text-2xl mb-4 ml-10">Analytics</h1>
         <h1 className="flex items-center font-semibold cursor-pointer">
           This week <RiArrowDropDownLine className="text-3xl " />
         </h1>
       </div>
-      <ComposedChart width={500} height={200} data={data}>
-        <defs>
-          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#8dc387" stopOpacity={0.25} />
-            <stop offset="95%" stopColor="#FFFFFF" stopOpacity={0.1} />
-          </linearGradient>
-        </defs>
-        <XAxis dataKey="name" />
-        <YAxis />
-        <CartesianGrid vertical={false} stroke="#DDD" />
-        <Tooltip />
-        <Area
-          type="monotone"
-          dataKey="value"
-          stroke="#8dc387"
-          fillOpacity={1}
-          strokeWidth={2}
-          fill="url(#colorUv)"
-        />
-        <Line
-          type="monotone"
-          dot={false}
-          strokeLinecap="round"
-          legendType="none"
-          stroke="#8dc387"
-          strokeWidth={2}
-        />
-      </ComposedChart>
+      <ResponsiveContainer width="100%" height="100%">
+        <ComposedChart width={500} height={200} data={data}>
+          <defs>
+            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#8dc387" stopOpacity={0.25} />
+              <stop offset="95%" stopColor="#FFFFFF" stopOpacity={0.1} />
+            </linearGradient>
+          </defs>
+          <XAxis dataKey="name" />
+          <YAxis />
+          <CartesianGrid vertical={false} stroke="#DDD" />
+          <Tooltip />
+          <Area
+            type="monotone"
+            dataKey="value"
+            stroke="#8dc387"
+            fillOpacity={1}
+            strokeWidth={2}
+            fill="url(#colorUv)"
+          />
+          <Line
+            type="monotone"
+            dot={false}
+            strokeLinecap="round"
+            legendType="none"
+            stroke="#8dc387"
+            strokeWidth={2}
+          />
+        </ComposedChart>
+      </ResponsiveContainer>
     </div>
   );
 };

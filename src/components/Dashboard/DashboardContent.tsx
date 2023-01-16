@@ -16,7 +16,7 @@ const DashboardContent: FC<props> = ({ setTheme, theme }) => {
   };
 
   return (
-    <div className="flex w-max px-10 flex-col">
+    <div className="flex w-full px-10 flex-col">
       <div className="flex items-center my-6 gap-6">
         <SearchBar />
         <div
