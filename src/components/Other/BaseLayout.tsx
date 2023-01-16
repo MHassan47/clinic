@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Chat from "../Right/Chat";
 import Sidebar from "../Sidebar/Sidebar";
 
 interface BaseLayoutProps {
@@ -10,8 +11,10 @@ const BaseLayout: FC<BaseLayoutProps> = (props) => {
       <div>
         <Sidebar />
       </div>
-      <div className="flex w-2/3">{props.children}</div>
-      <div className="flex w-1/3 bg-gray-300"></div>
+      <div className="flex w-2/3 h-full">{props.children}</div>
+      <div className="flex justify-center shadow-xl items-end w-1/3 bg-white dark:bg-zinc-800 transition duration-500 ease-in-out transform">
+        <Chat />
+      </div>
     </div>
   );
 };
