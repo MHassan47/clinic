@@ -13,10 +13,10 @@ function Schedule() {
           All Patients <RiArrowRightSLine className="" />
         </h2>
       </div>
-      <div className="flex h-full flex-col gap-6 bg-white dark:bg-zinc-800  p-4 rounded-2xl">
+      <div className="flex h-full flex-col gap-6 bg-white dark:bg-zinc-800  p-4 rounded-2xl transition duration-500 ease-in-out transform">
         <div className="flex justify-center items-center gap-2 h-full">
           <h1 className="text-lg">10:00 am</h1>
-          <div className="flex w-5/6 justify-between items-center p-4 bg-gray-100 shadow-xl dark:bg-neutral-900 dark:text-white font-medium rounded-2xl">
+          <div className="flex w-5/6 justify-between items-center p-4 bg-gray-100 shadow-xl dark:bg-neutral-900 dark:text-white font-medium rounded-2xl transition duration-500 ease-in-out transform">
             <img
               src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
               className="flex w-12 h-12 bg-lightgr rounded-3xl object-cover"
@@ -35,7 +35,7 @@ function Schedule() {
         </div>
         <div className="flex justify-center items-center gap-2 h-full">
           <h1 className="text-lg">11:15 am</h1>
-          <div className="flex w-5/6 justify-between items-center p-4 bg-gray-100 shadow-xl  dark:bg-neutral-900 dark:text-white font-medium rounded-2xl">
+          <div className="flex w-5/6 justify-between items-center p-4 bg-gray-100 shadow-xl  dark:bg-neutral-900 dark:text-white font-medium rounded-2xl transition duration-500 ease-in-out transform">
             <img
               src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
               className="flex w-12 h-12 bg-lightgr rounded-3xl object-cover"

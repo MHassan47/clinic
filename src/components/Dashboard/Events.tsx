@@ -11,7 +11,7 @@ function Events() {
         </h2>
       </div>
       <div className="flex flex-col gap-6">
-        <div className="flex h-full justify-between p-4 shadow-2xl bg-white dark:bg-zinc-800 dark:text-white font-medium rounded-2xl ">
+        <div className="flex h-full justify-between p-4 shadow-2xl bg-white dark:bg-zinc-800 dark:text-white font-medium rounded-2xl transition duration-500 ease-in-out transform">
           <div className="flex flex-col">
             <h1>Team meeting</h1>
             <h2>11:30 - 12:30</h2>
@@ -32,7 +32,7 @@ function Events() {
           </div>
         </div>
 
-        <div className="flex h-full justify-between p-4 bg-white shadow-2xl dark:bg-zinc-800 dark:text-white font-medium rounded-2xl ">
+        <div className="flex h-full justify-between p-4 bg-white shadow-2xl dark:bg-zinc-800 dark:text-white font-medium rounded-2xl transition duration-500 ease-in-out transform">
           <div className="flex flex-col">
             <h1>Conference</h1>
             <h2>9:30 - 12:30</h2>
