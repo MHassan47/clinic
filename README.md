@@ -8,6 +8,9 @@ TypeScript · React.js · TailWindCSS
 
 [screen-capture (1).webm](https://user-images.githubusercontent.com/98605431/212755318-7e0857d4-b461-4b47-98bb-963d4ff3cf7d.webm)
 
+![clinic_light](https://user-images.githubusercontent.com/98605431/212755648-b381de72-324b-48f8-b45a-ea52274c5438.JPG)
+
+![clinic_dark](https://user-images.githubusercontent.com/98605431/212755659-73d1660b-1ab6-44e7-a48e-bec1413e6013.JPG)
 
 # Getting Started with Create React App
 
