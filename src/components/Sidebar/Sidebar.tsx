@@ -11,7 +11,7 @@ const Sidebar: FC = () => {
   //   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col bg-gr dark:bg-darkgr py-6">
+    <div className="flex flex-col h-full bg-gr dark:bg-darkgr py-6">
       <div className=" h-screen w-48 flex flex-col justify-around items-center">
         <div className="px-8 py-2">
           <div
