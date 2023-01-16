@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+
 import Sidebar from "./components/Sidebar/Sidebar";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -13,8 +15,8 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="flex h-screen w-screen dark:bg-black">
-      <Sidebar />
+    <div className="flex h-screen w-screen dark:bg-gray-800">
+      <Dashboard />
     </div>
   );
 }
