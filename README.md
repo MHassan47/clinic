@@ -5,7 +5,9 @@ A Health Application where health professionals can organize and track activitie
 ## Tech Stack
 
 TypeScript · React.js · TailWindCSS
-[screen-capture (1).webm](https://user-images.githubusercontent.com/98605431/212755133-1efbc52b-f1f2-4c5c-93c6-b54160e70895.webm)
+
+[screen-capture (1).webm](https://user-images.githubusercontent.com/98605431/212755318-7e0857d4-b461-4b47-98bb-963d4ff3cf7d.webm)
+
 
 # Getting Started with Create React App
 
