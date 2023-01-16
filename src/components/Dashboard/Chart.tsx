@@ -26,7 +26,7 @@ const Chart: FC = () => {
   };
 
   return (
-    <div className="flex flex-col bg-white dark:bg-gray-600 dark:text-white h-full w-full rounded-2xl p-6 transition duration-500 ease-in-out transform">
+    <div className="flex flex-col bg-white shadow-2xl  dark:bg-zinc-800 dark:text-white h-full w-full rounded-2xl p-6 transition duration-500 ease-in-out transform">
       <div className="flex justify-between">
         <h1 className="font-semibold text-2xl mb-4 ml-10">Analytics</h1>
         <h1 className="flex items-center font-semibold cursor-pointer">

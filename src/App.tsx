@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen w-screen bg-gray-100 dark:bg-gray-800 transition duration-500 ease-in-out transform">
+    <div className="flex h-screen w-screen bg-gray-100 dark:bg-neutral-900 transition duration-500 ease-in-out transform">
       <Dashboard setTheme={setTheme} theme={theme} />
     </div>
   );

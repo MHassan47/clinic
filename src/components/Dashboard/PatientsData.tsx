@@ -9,7 +9,7 @@ function PatientsData() {
   let patients = 104;
   return (
     <div className="flex h-full gap-6">
-      <div className="flexjustify-center bg-white w-2/5 dark:bg-gray-700 rounded-3xl p-6 transition duration-500 ease-in-out transform">
+      <div className="flexjustify-center bg-white w-2/5 shadow-2xl dark:bg-zinc-800 rounded-3xl p-6 transition duration-500 ease-in-out transform">
         <CircularProgressbarWithChildren
           value={60}
           styles={buildStyles({
@@ -52,7 +52,7 @@ function PatientsData() {
         </div>
       </div>
       <div className="flex flex-col gap-6 w-2/5 dark:text-white">
-        <div className="flex flex-col h-1/2 bg-white dark:bg-gray-700 rounded-3xl p-6 transition duration-500 ease-in-out transform">
+        <div className="flex flex-col h-1/2 bg-white shadow-2xl dark:bg-zinc-800 rounded-3xl p-6 transition duration-500 ease-in-out transform">
           <h1 className="text-xl font-semibold mb-2">New Patients</h1>
           <div className="flex flex-row items-center justify-around">
             <h1 className="font-semibold text-4xl">51</h1>
@@ -63,7 +63,7 @@ function PatientsData() {
           </div>
         </div>
 
-        <div className="flex flex-col h-1/2 bg-white dark:bg-gray-700 rounded-3xl p-6 transition duration-500 ease-in-out transform">
+        <div className="flex flex-col h-1/2 shadow-2xl bg-white dark:bg-zinc-800 rounded-3xl p-6 transition duration-500 ease-in-out transform">
           <h1 className="text-xl font-semibold mb-2">Old Patients</h1>
           <div className="flex flex-row items-center justify-around">
             <h1 className="font-semibold text-4xl ">32</h1>

@@ -3,7 +3,7 @@ import { IoIosSend } from "react-icons/io";
 function Chat() {
   const [message, setMessage] = useState("");
   return (
-    <div className="flex flex-col justify-around w-2/3 h-2/5 shadow-2xl bg-gray-100 dark:bg-gray-800 rounded-2xl dark:text-white transition duration-500 ease-in-out transform">
+    <div className="flex flex-col justify-around w-2/3 h-2/5 shadow-2xl bg-gray-100 dark:bg-neutral-900 rounded-2xl dark:text-white transition duration-500 ease-in-out transform">
       <div className="flex justify-between items-center border-b-2 border-gray-400 dark:border-gray-500">
         <h1 className="text-2xl font-bold  mx-6 mb-4"> Chat</h1>
         <div className="w-6 h-6 bg-black rounded-3xl  mx-6 mb-4" />
