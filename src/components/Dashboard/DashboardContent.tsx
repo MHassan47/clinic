@@ -5,6 +5,7 @@ import SearchBar from "./SearchBar";
 import { BsFillMoonFill } from "react-icons/bs";
 import { RiSunFill } from "react-icons/ri";
 import Events from "./Events";
+import Schedule from "./Schedule";
 
 interface props {
   setTheme: React.Dispatch<React.SetStateAction<string>>;
@@ -26,7 +27,7 @@ const DashboardContent: FC<props> = ({ setTheme, theme }) => {
   });
 
   return (
-    <div className="flex w-full h-screen px-10 flex-col">
+    <div className="flex w-full h-full px-10 flex-col">
       <div className="flex items-center my-6 gap-6">
         <SearchBar />
         <div
@@ -45,7 +46,7 @@ const DashboardContent: FC<props> = ({ setTheme, theme }) => {
         <h1 className="text-5xl font-bold ">Dashboard</h1>
         <h1 className="text-lg font-semibold">{formattedDate}</h1>
       </div>
-      <div className="flex flex-row h-1/3">
+      <div className="flex flex-row h-2/5">
         <div className="w-1/2 h-full">
           <PatientsData />
         </div>
@@ -53,11 +54,13 @@ const DashboardContent: FC<props> = ({ setTheme, theme }) => {
           <Chart />
         </div>
       </div>
-      <div className="flex flex-row h-1/3">
-        <div className="w-full h-full">
+      <div className="flex h-max mt-20">
+        <div className="flex items-center w-full h-full">
           <Events />
         </div>
-        <div className="w-full h-full">right</div>
+        <div className="flex items-center w-full h-full">
+          <Schedule />
+        </div>
       </div>
     </div>
   );
