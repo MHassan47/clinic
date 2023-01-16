@@ -4,6 +4,7 @@ import PatientsData from "./PatientsData";
 import SearchBar from "./SearchBar";
 import { BsFillMoonFill } from "react-icons/bs";
 import { RiSunFill } from "react-icons/ri";
+import Events from "./Events";
 
 interface props {
   setTheme: React.Dispatch<React.SetStateAction<string>>;
@@ -25,11 +26,11 @@ const DashboardContent: FC<props> = ({ setTheme, theme }) => {
   });
 
   return (
-    <div className="flex w-full px-10 flex-col">
+    <div className="flex w-full h-screen px-10 flex-col">
       <div className="flex items-center my-6 gap-6">
         <SearchBar />
         <div
-          className=" transition duration-500 ease-in-out transform flex justify-center items-center 
+          className=" transition duration-500 ease-in-out transform flex justify-center items-center shadow-lg
           bg-white dark:bg-gray-700 h-full w-16 rounded-xl cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-500"
           onClick={handleThemeChange}
         >
@@ -44,13 +45,19 @@ const DashboardContent: FC<props> = ({ setTheme, theme }) => {
         <h1 className="text-5xl font-bold ">Dashboard</h1>
         <h1 className="text-lg font-semibold">{formattedDate}</h1>
       </div>
-      <div className="flex flex-row ">
+      <div className="flex flex-row h-1/3">
         <div className="w-1/2 h-full">
           <PatientsData />
         </div>
         <div className="w-1/2">
           <Chart />
         </div>
+      </div>
+      <div className="flex flex-row h-1/3">
+        <div className="w-full h-full">
+          <Events />
+        </div>
+        <div className="w-full h-full">right</div>
       </div>
     </div>
   );
