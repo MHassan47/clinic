@@ -12,7 +12,7 @@ const Sidebar: FC = () => {
 
   return (
     <div className="flex flex-col h-full bg-gr dark:bg-darkgr py-6">
-      <div className=" h-screen w-48 flex flex-col justify-around items-center">
+      <div className=" h-screen w-40 flex flex-col justify-between items-center">
         <div className="px-8 py-2">
           <div
             className="flex items-center cursor-pointer mb-10"
@@ -32,13 +32,13 @@ const Sidebar: FC = () => {
           >
             <BsBarChartFill className="text-3xl mr-4 text-white dark:text-gray-400 opacity-60 hover:opacity-100 dark:hover:text-white hover:scale-110" />
           </div>
-          <div className="flex items-center mt-4 cursor-pointer mb-10">
-            <MdSettings className="text-3xl mr-4 text-white dark:text-gray-400 opacity-60 hover:opacity-100 dark:hover:text-white hover:scale-110" />
-          </div>
         </div>
         <div className="flex flex-col px-8 py-2">
           <div className="flex items-center mt-4 cursor-pointer mb-10">
             <HiUserAdd className="text-3xl mr-4 text-white dark:text-gray-400 opacity-60 hover:opacity-100 dark:hover:text-white hover:scale-110" />
+          </div>
+          <div className="flex items-center mt-4 cursor-pointer mb-10">
+            <MdSettings className="text-3xl mr-4 text-white dark:text-gray-400 opacity-60 hover:opacity-100 dark:hover:text-white hover:scale-110" />
           </div>
           <div className="flex items-center mt-4 cursor-pointer mb-10">
             <HiLogout className="text-3xl mr-4 text-white dark:text-gray-400 opacity-60 hover:opacity-100 dark:hover:text-white hover:scale-110" />
