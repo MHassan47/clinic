@@ -31,7 +31,7 @@ const DashboardContent: FC<props> = ({ setTheme, theme }) => {
         <SearchBar />
         <div
           className=" transition duration-500 ease-in-out transform flex justify-center items-center shadow-lg
-          bg-white dark:bg-gray-700 h-full w-16 rounded-xl cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-500"
+          bg-white dark:bg-gray-700 h-full w-16 rounded-xl cursor-pointer"
           onClick={handleThemeChange}
         >
           {theme === "dark" ? (
