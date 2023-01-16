@@ -1,3 +1,11 @@
+# Clinic
+
+A Health Application where health professionals can organize and track activities and message
+
+## Tech Stack
+
+TypeScript · React.js · TailWindCSS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
