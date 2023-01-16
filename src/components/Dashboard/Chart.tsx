@@ -25,15 +25,14 @@ const Chart: FC = () => {
   };
 
   return (
-    <div className="flex flex-col bg-white h-max w-max rounded-2xl p-6">
-      {/* dark:bg-gray-6x00 dark:text-white */}
+    <div className="flex flex-col bg-white dark:bg-gray-600 dark:text-white h-full w-max rounded-2xl p-6">
       <div className="flex justify-between">
         <h1 className="font-semibold text-2xl mb-4 ml-10">Analytics</h1>
         <h1 className="flex items-center font-semibold cursor-pointer">
           This week <RiArrowDropDownLine className="text-3xl " />
         </h1>
       </div>
-      <ComposedChart width={600} height={400} data={data}>
+      <ComposedChart width={500} height={200} data={data}>
         <defs>
           <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="#8dc387" stopOpacity={0.25} />
