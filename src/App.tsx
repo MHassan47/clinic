@@ -15,7 +15,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="flex h-screen w-screen dark:bg-gray-800">
+    <div className="flex h-screen w-screen bg-gray-100 dark:bg-gray-800">
       <Dashboard />
     </div>
   );
