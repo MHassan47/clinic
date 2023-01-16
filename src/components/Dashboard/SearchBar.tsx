@@ -4,7 +4,7 @@ const SearchBar: FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <div className=" w-3/5 h-max mb-6 bg-gray-200 dark:bg-gray-500 rounded-2xl">
+    <div className=" w-full h-max bg-gray-200 dark:bg-gray-500 rounded-2xl">
       <div className="flex justify-around w-full flex-row border-2l m-4 rounded-xl focus:bg-blue-400 ">
         <form onSubmit={() => console.log()} className="w-5/6">
           <input
