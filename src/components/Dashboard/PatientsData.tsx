@@ -1,4 +1,5 @@
 import React from "react";
+import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import {
   CircularProgressbarWithChildren,
   buildStyles,
@@ -7,13 +8,13 @@ import "react-circular-progressbar/dist/styles.css";
 function PatientsData() {
   let patients = 104;
   return (
-    <div className="flex border-2 justify-center gap-10">
-      <div className="flex bg-white dark:bg-gray-700 rounded-3xl p-6">
+    <div className="flex h-full gap-6">
+      <div className="flexjustify-center bg-white w-2/5 dark:bg-gray-700 rounded-3xl p-6">
         <CircularProgressbarWithChildren
-          value={75}
+          value={60}
           styles={buildStyles({
             // Rotation of path and trail, in number of turns (0-1)
-            rotation: 0.25,
+            rotation: 1,
 
             // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
             strokeLinecap: "round",
@@ -28,21 +29,48 @@ function PatientsData() {
             // Colors
             pathColor: `#547b41`,
             textColor: "white",
-            trailColor: "rgba(0,0,0,0.1)",
+            trailColor: "#8ac185",
             backgroundColor: "#3e98c7",
           })}
         >
-          <div className="font-bold text-2xl dark:text-white">104</div>
+          <div className=" font-bold text-2xl dark:text-white">104</div>
           <div className="font-semibold text-md text-gray-500 dark:text-gray-300">
             Patients
           </div>
         </CircularProgressbarWithChildren>
+        <div className="flex flex-col mx-2 my-6 gap-4 dark:text-white">
+          <div className="flex flex-row gap-4 items-center">
+            <div className="w-4 h-4 rounded-3xl bg-gr" />
+            <h1 className="flex">Male </h1>
+            <h1 className="font-semibold"> 40%</h1>
+          </div>
+          <div className="flex flex-row gap-4 items-center dark:text-white">
+            <div className="w-4 h-4 rounded-3xl bg-darkgr" />
+            <h1 className="flex">Female</h1>
+            <h1 className="font-semibold">60%</h1>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col bg-white dark:bg-gray-700 rounded-3xl p-6 ">
-        <h1 className="text-lg font-semibold">New Patients</h1>
-        <h1 className="font-bold">51</h1>
-        <div className="text-center bg-lightgr text-darkgr font-bold rounded-3xl">
-          52%
+      <div className="flex flex-col gap-6 w-2/5 dark:text-white">
+        <div className="flex flex-col h-1/2 bg-white dark:bg-gray-700 rounded-3xl p-6 ">
+          <h1 className="text-xl font-semibold mb-2">New Patients</h1>
+          <div className="flex flex-row items-center justify-around">
+            <h1 className="font-semibold text-4xl">51</h1>
+            <div className="flex items-center text-center bg-lightgr text-darkgr font-bold rounded-3xl w-1/3">
+              <RiArrowDropUpLine />
+              52%
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col h-1/2 bg-white dark:bg-gray-700 rounded-3xl p-6 ">
+          <h1 className="text-xl font-semibold mb-2">Old Patients</h1>
+          <div className="flex flex-row items-center justify-around">
+            <h1 className="font-semibold text-4xl ">32</h1>
+            <div className="flex items-center text-center bg-red-300 text-red-500 font-bold rounded-3xl w-1/3 h-2/3">
+              <RiArrowDropDownLine /> 14%
+            </div>
+          </div>
         </div>
       </div>
     </div>
