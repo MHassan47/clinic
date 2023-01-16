@@ -9,7 +9,7 @@ function PatientsData() {
   let patients = 104;
   return (
     <div className="flex h-full gap-6">
-      <div className="flexjustify-center bg-white w-2/5 shadow-2xl dark:bg-zinc-800 rounded-3xl p-6 transition duration-500 ease-in-out transform">
+      <div className="bg-white w-2/5 shadow-2xl dark:bg-zinc-800 rounded-3xl p-6 transition duration-500 ease-in-out transform">
         <CircularProgressbarWithChildren
           value={60}
           styles={buildStyles({
@@ -55,7 +55,7 @@ function PatientsData() {
         <div className="flex flex-col h-1/2 bg-white shadow-2xl dark:bg-zinc-800 rounded-3xl p-6 transition duration-500 ease-in-out transform">
           <h1 className="text-xl font-semibold mb-2">New Patients</h1>
           <div className="flex flex-row items-center justify-around">
-            <h1 className="font-semibold text-4xl">51</h1>
+            <h1 className="font-semibold text-5xl">51</h1>
             <div className="flex items-center text-center bg-lightgr text-darkgr font-bold rounded-3xl w-1/3">
               <RiArrowDropUpLine />
               52%
@@ -66,7 +66,7 @@ function PatientsData() {
         <div className="flex flex-col h-1/2 shadow-2xl bg-white dark:bg-zinc-800 rounded-3xl p-6 transition duration-500 ease-in-out transform">
           <h1 className="text-xl font-semibold mb-2">Old Patients</h1>
           <div className="flex flex-row items-center justify-around">
-            <h1 className="font-semibold text-4xl ">32</h1>
+            <h1 className="font-semibold text-5xl ">32</h1>
             <div className="flex items-center text-center bg-red-300 text-red-500 font-bold rounded-3xl w-1/3 h-2/3">
               <RiArrowDropDownLine /> 14%
             </div>
