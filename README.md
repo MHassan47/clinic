@@ -1,6 +1,6 @@
 # Clinic
 
-A health application where health professionals can organize and track activities and message
+A health app where health professionals can organize and track activities and message
 
 ## Tech Stack
 
